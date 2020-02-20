@@ -5,6 +5,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import WarningIcon from '@material-ui/icons/Warning';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -35,7 +36,7 @@ export default function ControlledExpansionPanels() {
     <div className={classes.root}>
       <ExpansionPanel expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1bh-content" id="panel1bh-header">
-          <Typography className={classes.heading}>General settings</Typography>
+          <Typography className={classes.heading}><WarningIcon/></Typography>
           <Typography className={classes.secondaryHeading}>I am an expansion panel</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
