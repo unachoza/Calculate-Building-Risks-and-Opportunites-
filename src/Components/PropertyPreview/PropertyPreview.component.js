@@ -5,6 +5,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
+import Divider from '@material-ui/core/Divider';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
@@ -36,6 +37,8 @@ export default function InteractiveList() {
   const classes = useStyles();
   const [dense, setDense] = React.useState(false);
   const [secondary, setSecondary] = React.useState(false);
+ 
+ 
 
   return (
     <div className={classes.root}>
@@ -46,16 +49,14 @@ export default function InteractiveList() {
           </Typography>
           <div className={classes.demo}>
             <List dense={dense}>
-              {generate(
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <HomeIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText primary="1200 BROADWAY" secondary={secondary ? 'Secondary text' : null} />
-                </ListItem>
-              )}
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <HomeIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="1200 BROADWAY" secondary={secondary ? 'Secondary text' : null} />
+              </ListItem>
             </List>
           </div>
         </Grid>
