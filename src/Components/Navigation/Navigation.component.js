@@ -11,7 +11,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import OpenLeftMenu from '../OpenLeftMenu/OpenLeftMenu.component'
+import OpenLeftMenu from '../OpenLeftMenu/OpenLeftMenu.component';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -34,23 +34,19 @@ export default function MenuAppBar() {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+  // const handleClose = () => {
+  //   setAnchorEl(null);
+  // };
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-       <MenuIcon />
-       
-       <OpenLeftMenu/>
+            <OpenLeftMenu />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             Building Dashborad
           </Typography>
-
           <div>
             <IconButton
               aria-label="account of current user"
@@ -61,24 +57,6 @@ export default function MenuAppBar() {
             >
               <AccountCircle />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorEl}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={open}
-              onClose={handleClose}
-            >
-              <MenuItem onClick={handleClose}>Profile</MenuItem>
-              <MenuItem onClick={handleClose}>My account</MenuItem>
-            </Menu>
           </div>
         </Toolbar>
       </AppBar>
