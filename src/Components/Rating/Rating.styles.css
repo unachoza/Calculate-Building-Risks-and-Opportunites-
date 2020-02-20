@@ -1,12 +1,24 @@
-.big-raiting-container{
+.big-raiting-container {
   display: flex;
-  width: 90vw;
+   width: 50%;
+  border: 7px red solid;
 }
 
-.raiting-container {
-  size: 30vw;
+img {
+/* width: auto; */
+width: 100%;
+}
+div {
+display: block;
+width: 100%;
+}
+.pIMG{
+height: 400px;
+/* width: 400px; */
 }
 
-.raiting-container img{
-  width: 100%;
+.raiting-container img {
+ display: flex;
+  /* width: 30%; */
+ border: 7px blue solid;
 }

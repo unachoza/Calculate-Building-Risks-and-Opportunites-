@@ -1,19 +1,23 @@
 import React from 'react';
-import Circle1 from "../../img/Circle1.png"
-import Circle2 from '../../img/Circle2.png'
-import "./Rating.styles.css"
 
+import './Rating.styles.css';
+import Card from '../Card/Card.component';
 
-const Raiting = () => {
+const Raiting = (props) => {
   return (
-    <div className="big-raiting-container">
-      <div className="raiting-container">
-        <img src={Circle1} />
+    <div className="raiting-container">
+      <div>
+        <img src={props.img} className="pIMG"/>
+        {/* other wodrd
+      <Card /> */}
       </div>
-      <div className="raiting-container">
+      {/* <div>
         <img src={Circle2} />
-      </div>
-    </div>
+        {/* word
+        <Card/> */}
+      </div> 
+     
+    // </div>
   );
 };
 export default Raiting;

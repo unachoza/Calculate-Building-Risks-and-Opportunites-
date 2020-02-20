@@ -3,3 +3,8 @@ display: flex;
 border: solid green 4px;
 
 }
+
+.rating-containerr{
+display: flex;
+justify-content: space-around;
+}
