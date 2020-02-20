@@ -1,5 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Navigation from '../../Components/Navigation/Navigation.component';
+import OpenLeftMenu from '../../Components/OpenLeftMenu/OpenLeftMenu.component';
 
-const Dashboard = () => <div>Dashboard</div>
+const Dashboard = () => {
+  return (
+    <div>
+      <Navigation/>
 
-export default Dashboard
+      <div>Dashboard</div>
+    </div>
+  );
+};
+export default Dashboard;
