@@ -21,7 +21,10 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
   },
   title: {
-    margin: theme.spacing(4, 0, 2),
+    // margin: theme.spacing(4, 0, 2),
+    // margin: "0 auto",
+    marginLeft: "60px",
+    width: "100%"
   },
 }));
 
@@ -33,7 +36,8 @@ function generate(element) {
   );
 }
 
-export default function InteractiveList() {
+export default function InteractiveList(props) {
+  console.log(props)
   const classes = useStyles();
   const [dense, setDense] = React.useState(false);
   const [secondary, setSecondary] = React.useState(false);
@@ -44,9 +48,7 @@ export default function InteractiveList() {
     <div className={classes.root}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Typography variant="h6" className={classes.title}>
-            Property List
-          </Typography>
+         
           <div className={classes.demo}>
             <List dense={dense}>
               <ListItem>
@@ -55,7 +57,7 @@ export default function InteractiveList() {
                     <HomeIcon />
                   </Avatar>
                 </ListItemAvatar>
-                <ListItemText primary="1200 BROADWAY" secondary={secondary ? 'Secondary text' : null} />
+                <ListItemText primary={props.address} secondary={secondary ? 'Secondary text' : null} />
               </ListItem>
             </List>
           </div>
