@@ -1,0 +1,5 @@
+.dashboard-container {
+display: flex;
+border: solid green 4px;
+
+}

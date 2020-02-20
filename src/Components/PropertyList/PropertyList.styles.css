@@ -1,1 +1,5 @@
-/* comment */
+.property-list-container {
+  border: solid 2px grey;
+  height: 94vh;
+  width: 25vw;
+}

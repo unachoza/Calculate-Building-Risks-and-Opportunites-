@@ -1,0 +1,12 @@
+.big-raiting-container{
+  display: flex;
+  width: 90vw;
+}
+
+.raiting-container {
+  size: 30vw;
+}
+
+.raiting-container img{
+  width: 100%;
+}
