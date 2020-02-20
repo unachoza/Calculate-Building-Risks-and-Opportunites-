@@ -1,13 +1,12 @@
 import React from 'react';
 import Navigation from '../../Components/Navigation/Navigation.component';
-import OpenLeftMenu from '../../Components/OpenLeftMenu/OpenLeftMenu.component';
+import PropertyList from '../../Components/PropertyList/PropertyList.component';
 
 const Dashboard = () => {
   return (
     <div>
-      <Navigation/>
-
-      <div>Dashboard</div>
+      <Navigation />
+      <PropertyList />
     </div>
   );
 };
