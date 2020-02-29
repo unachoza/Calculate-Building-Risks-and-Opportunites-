@@ -1,8 +1,12 @@
 .App {
   text-align: center;
 }
-*{
-font-family: 'Roboto Slab', serif;
+.logo {
+  height: 200px;
+  width: auto;
+}
+* {
+  font-family: 'Roboto Slab', serif;
 }
 @keyframes App-logo-spin {
   from {
