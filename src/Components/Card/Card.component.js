@@ -10,7 +10,7 @@ import WarningIcon from '@material-ui/icons/Warning';
 
 const useStyles = makeStyles({
   root: {
-    width: '100%',
+    width: '80%',
   },
 });
 
