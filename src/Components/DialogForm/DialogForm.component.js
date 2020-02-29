@@ -7,7 +7,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import HomeIcon from '@material-ui/icons/Home';
-import "./DialogForm.styles.css"
+import './DialogForm.styles.css';
 
 export default function FormDialog() {
   const [open, setOpen] = React.useState(false);
@@ -26,7 +26,7 @@ export default function FormDialog() {
         <HomeIcon />
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">Add Property</DialogTitle>
+        <DialogTitle id="form-dialog-title">Add Property to Your Dashboard</DialogTitle>
         <DialogContent>
           <DialogContentText></DialogContentText>
           <TextField autoFocus margin="dense" id="name" label=" Address" type="email" fullWidth />
@@ -39,7 +39,8 @@ export default function FormDialog() {
             Save
           </Button>
         </DialogActions>
-      </Dialog><br></br>
+      </Dialog>
+      <br></br>
       Add Property
     </div>
   );

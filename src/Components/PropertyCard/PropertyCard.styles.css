@@ -1,0 +1,9 @@
+.property-card {
+border: solid black 20px;
+height: 75vh;
+}
+
+.rating-containerr {
+  display: flex;
+  justify-content: space-around;
+}

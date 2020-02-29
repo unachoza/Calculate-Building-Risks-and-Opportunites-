@@ -1,5 +1,6 @@
 .add-property-dialog {
-position: absolute;
-bottom: 5vh;
-left: 8vw;
+  position: absolute;
+  bottom: 5vh;
+  justify-content: center;
+  width: 100%;
 }
