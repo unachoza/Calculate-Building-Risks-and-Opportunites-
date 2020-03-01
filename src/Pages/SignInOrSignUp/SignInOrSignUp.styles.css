@@ -1,14 +1,17 @@
-.SignInOrSignUp-title {
+.SignInOrSignUp-page {
+  margin-top: 100px;
+}
 
+.SignInOrSignUp-title {
   font-size: 21px;
   line-height: 25px;
   text-align: center;
 
   color: #48b452;
 }
-.company-title{
-font-size: 65px;
-line-height: 78px;
-text-align: center;
+.company-title {
+  font-size: 65px;
+  line-height: 78px;
+  text-align: center;
   color: #48b452;
 }

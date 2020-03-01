@@ -5,7 +5,7 @@ import './SignInOrSignUp.styles.css'
 
 const SignInOrSignUp = () => {
   return (
-   <div>
+   <div className="SignInOrSignUp-page">
     <img src={LOGO} class="logo" alt="company logo" />
     <div className="company-title">REgreen</div>
     <h1 className="SignInOrSignUp-title">Helping Make a Greener NYC for Tomorrow, Today</h1>

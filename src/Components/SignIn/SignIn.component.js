@@ -6,8 +6,8 @@ import CustomButton from '../CustomButton/CustomButton.component';
 
 const useStyles = makeStyles({
   root: {
-  width: "600px",
-   marginBottom: "20px"
+    width: '600px',
+    marginBottom: '40px',
   },
 });
 
@@ -17,8 +17,15 @@ const Form = () => {
   return (
     <div className="form">
       <FormControl>
-     <TextField className={classes.root}id="outlined-basic" label="Email" variant="outlined" value="" feildWidth={60} />
-        <TextField className={classes.root}id="outlined-basic" label="Password" variant="outlined" value="" />
+        <TextField
+          className={classes.root}
+          id="outlined-basic"
+          label="Email"
+          variant="outlined"
+          value=""
+          feildWidth={60}
+        />
+        <TextField className={classes.root} id="outlined-basic" label="Password" variant="outlined" value="" />
         <CustomButton>Login</CustomButton>
       </FormControl>
     </div>
