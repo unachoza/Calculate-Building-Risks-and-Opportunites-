@@ -1,8 +1,9 @@
 import React from 'react';
 import { FormControl, FormLabel, FormHelperText, TextField, Input, InputLabel } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import './SignIn.styles.css';
+import './signIn.styles.scss';
 import CustomButton from '../CustomButton/CustomButton.component';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
@@ -27,6 +28,9 @@ const Form = () => {
         />
         <TextField className={classes.root} id="outlined-basic" label="Password" variant="outlined" value="" />
         <CustomButton>Login</CustomButton>
+        <Link to="/signUp" className="sign-up-text">
+          Sign Up
+        </Link>
       </FormControl>
     </div>
   );

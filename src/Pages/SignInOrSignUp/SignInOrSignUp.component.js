@@ -1,7 +1,7 @@
 import React from 'react';
 import LOGO from '../../Assets/LOGO.svg';
 import SignIn from '../../Components/SignIn/SignIn.component';
-import './SignInOrSignUp.styles.css'
+import './SignInOrSignUp.styles.scss'
 
 const SignInOrSignUp = () => {
   return (
